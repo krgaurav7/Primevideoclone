@@ -1,0 +1,365 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+}
+
+header {
+    background-color: #000000;
+    color: white;
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    top: 0;
+    z-index: 1000;
+}
+
+.pmlogo{
+    width: 80px;
+    height: 15.5px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    padding: 10px 20px;
+    position: static;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover{
+    border-radius: 8px;
+    padding: 10px;
+    margin: auto;
+    background-color: white;
+    color: #000000;
+    cursor: pointer;
+}
+
+.joinprime {
+  background-color: #1A9FFFCC;
+  border-radius: 8px;
+  transition: box-shadow 0.3s ease;
+}
+
+.joinprime a {
+  color: white;
+  font-weight: bold;
+  padding: 8px 8px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.joinprime a:hover {
+  box-shadow: 0 0 12px #1A9FFF, 0 0 24px #1A9FFF;
+  background-color: #1A9FFF; 
+  color: white;
+  border-radius: 8px;
+}
+
+.body1 {
+    width: 100%;
+    height: 675px;
+    padding: 20px;
+    margin-top: 70px;
+    position: sticky;
+    color: white;
+    background-image: url("https://m.media-amazon.com/images/G/31/AmazonVideo/2019/MLP.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+}
+
+h1{
+    display: block;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+    font-size: 36px;
+}
+
+.sign {
+  background-color: white;
+  color: black;
+  padding: 10px 15px;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  margin-top: 30px;
+  display: inline-flex;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.contain{
+    padding: 32px;
+    display: inline-block;
+    width: 440px;
+    height: 258px;
+    font-size: 18px;
+    color: white;
+}
+
+.sign:hover {
+  background-color: #e6e6e6;
+  color: black;
+}
+
+.body2{
+    width: 100%;
+    height: 675px;
+    padding: 20px;
+    position: sticky;
+    color: white;
+    background-image: url("https://m.media-amazon.com/images/G/31/AmazonVideo/2021/X-site/MLP/TVOD/TVOD_MLP_Right.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.body3{
+    width: 992px;
+    height: 500px;
+    padding: 10px;
+    color: white;
+    align-items: flex-start;
+}
+.head{
+    color: white;
+    text-align: start;
+    display: flex;
+}
+
+.contain3{
+    padding: 32px;
+    width: 400px;
+    height: 258px;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.b3-content{
+    width: 600px;
+}
+.b3-h1{
+    font-size: 50px;
+}
+
+.b3-text{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.b3-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  flex: 1;
+}
+
+.grid{
+    width: 160px;
+    height: 120px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.body3-review{
+    min-height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.card{
+    border-radius: 25px;
+    background-color: rgb(255, 255, 255);
+    width: 320px;
+    height: 400px;
+}
+
+.review-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.review-content{
+    margin: 0px 20px;
+}
+
+.image-content{
+    row-gap: 3px;
+    position: relative;
+    height: 170px;
+    padding: 25px 0;
+}
+.overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #43abf5;
+    left: 0;
+    top: 0;
+    border-radius: 25px 25px 0 25px;
+}
+
+.overlay::before,
+.overlay::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    width: 40px;
+    height: 40px;
+    background-color: #43abf5;
+}
+
+.overlay::after{
+    border-radius: 0 25px 0 0;
+    background-color: #ffffff;
+}
+
+.image-content,
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px 10px;
+}
+
+.card-image{
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: white;
+    padding: 3px;
+}
+
+.card-image .card-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.name{
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.description{
+    font-size: 14px;
+    color: #512828;
+    text-align: center;
+}
+
+ #toggle1,
+ #toggle2,
+ #toggle3 {
+    display: none;
+    }
+
+.button {
+    border: none;
+    font-size: 16px;
+    color: white;
+    padding: 8px 16px;
+    background-color: #1A9FFF;
+    border-radius: 6px;
+    margin: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    /* display: inline-block; */
+ }
+
+    .feedback{
+      display: none;
+      margin-top: 20px;
+      font-size: 18px;
+      color: #ffffff;
+      background-color: #007BFF;
+      border-radius: 6px;
+      text-align: center;
+    }
+
+#toggle1:hover + label + .feedback1,
+#toggle2:hover + label + .feedback2,
+#toggle3:hover + label + .feedback3 {
+  display: block;
+}
+
+.button:hover{
+    background-color: #43abf5;
+}
+
+footer {
+    background-color: #222222;
+    color: #8197a4;
+    padding: 20px;
+    text-align: -webkit-center;
+    position: static;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-links a {
+    font-size: 17px;
+    text-decoration:none;
+    margin: 10px;
+    color: #79b8f3;
+}
+
+.footer-links a:hover {
+  color: #90dffe;
+}
+
+.ftlogo{
+    width: 104px;
+    height: 32px;
+}
+
+.top-btn{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.scroll-top-btn {
+  background: #007bff;
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 14px;
+  align-items: flex-end;
+}
+
