@@ -57,19 +57,20 @@ header {
     cursor: pointer;
 }
 
-.joinprime {
-  background-color: #1A9FFFCC;
-  border-radius: 8px;
-  transition: box-shadow 0.3s ease;
-}
-
 .joinprime a {
   color: white;
+  background-color: #1A9FFFCC;
   font-weight: bold;
+   border-radius: 8px;
+  transition: box-shadow 0.3s ease;
   padding: 8px 8px;
   display: inline-block;
   text-decoration: none;
+  position:absolute;
+  right: 13px;
+  top: 19px;
 }
+
 
 .joinprime a:hover {
   box-shadow: 0 0 12px #1A9FFF, 0 0 24px #1A9FFF;
